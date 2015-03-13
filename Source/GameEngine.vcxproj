@@ -73,7 +73,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>PostBuild.cmd $(SolutionDir)\Assets $(OutDir)</Command>
+      <Command>PostBuild.cmd "$(SolutionDir)\Assets" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -100,7 +100,7 @@
       <TargetMachine>MachineX86</TargetMachine>
     </Link>
     <PostBuildEvent>
-      <Command>PostBuild.cmd $(SolutionDir)\Assets $(OutDir)</Command>
+      <Command>PostBuild.cmd "$(SolutionDir)\Assets" "$(OutDir)"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
