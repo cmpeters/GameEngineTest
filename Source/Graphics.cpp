@@ -260,10 +260,10 @@ namespace Framework
 		InitGeometry();
 
 		//Load the textures
-		LoadTexture("Assets/Circle.png");
-		LoadTexture("Assets/Square.png");
-		LoadTexture("Assets/CircleOutline.png");
-		LoadTexture("Assets/SquareOutline.png");
+		LoadTexture("Images/Circle.png");
+		LoadTexture("Images/Square.png");
+		LoadTexture("Images/CircleOutline.png");
+		LoadTexture("Images/SquareOutline.png");
 
 		//Load the shaders
 		LoadEffect(Basic,"Shaders/Basic.fx");
