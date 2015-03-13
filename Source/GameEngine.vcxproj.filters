@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="BaseEngine">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="BaseEngine\Factory">
+      <UniqueIdentifier>{bd4f944d-c34f-4637-8c84-66c8c9e0876b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Debug">
+      <UniqueIdentifier>{1c1cc7f3-7c2b-4236-8f49-07f6e3b029e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Transform">
+      <UniqueIdentifier>{a84e28b3-35ae-4a08-a47c-91c413a65eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Engine">
+      <UniqueIdentifier>{5a24c01d-246b-4626-9058-08db92831492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Composition">
+      <UniqueIdentifier>{23e73dbc-1dd5-4d6b-9c8f-b71192e7052e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Core">
+      <UniqueIdentifier>{d21a87e1-01ad-4503-8375-0f7f4035ad93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Headers">
+      <UniqueIdentifier>{39c4da5a-a227-4ee9-b14d-a202f0730c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\File">
+      <UniqueIdentifier>{f23fca99-fb94-41bb-aea9-737e92519f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BaseEngine\Serialization">
+      <UniqueIdentifier>{0bb4814d-1113-4838-abb1-7c897406cb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameLogic">
+      <UniqueIdentifier>{326089eb-fd9d-4808-84af-0f59e882eb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems">
+      <UniqueIdentifier>{0cbc80cb-f871-4625-bda8-79591213de9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Graphics">
+      <UniqueIdentifier>{f70c69f5-4f86-4115-9048-0959ac84bc15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Graphics\Shaders">
+      <UniqueIdentifier>{72d52e35-dd0b-4a5f-b0f9-df444970e6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Graphics\Components">
+      <UniqueIdentifier>{23ffcd88-d7a3-42e4-8b62-6b86144a4632}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Graphics\Utility">
+      <UniqueIdentifier>{5bc58cf5-8922-469f-9c10-c7f788eb3f47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Graphics\System">
+      <UniqueIdentifier>{8cfac640-8b63-4a4c-90c7-230ceadbede6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Physics">
+      <UniqueIdentifier>{c32ee929-fb36-4126-88a5-c71d2069f4dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Physics\Dynamics">
+      <UniqueIdentifier>{3f469381-ff7a-4cfa-a743-9657b0b9bebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Physics\System">
+      <UniqueIdentifier>{c5a04e61-9c45-4a3b-bf64-89894f701468}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Physics\Collision">
+      <UniqueIdentifier>{6485fb84-fea1-4317-920a-8e2b64c12d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Windows">
+      <UniqueIdentifier>{da0941b7-8bb8-434b-96dc-ab8b559186f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{e97ab87f-e173-424d-9823-f212ddf3f1a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Precompiled">
+      <UniqueIdentifier>{ddc4795b-34ad-43b5-85e3-edf213f335b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Systems\Physics\Constraints">
+      <UniqueIdentifier>{6e65b77e-8589-4ff9-a2be-f0d1d3b62172}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Factory.cpp">
+      <Filter>BaseEngine\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugDraw.cpp">
+      <Filter>BaseEngine\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>BaseEngine\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Composition.cpp">
+      <Filter>BaseEngine\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>BaseEngine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="FilePath.cpp">
+      <Filter>BaseEngine\File</Filter>
+    </ClCompile>
+    <ClCompile Include="TextSerialization.cpp">
+      <Filter>BaseEngine\Serialization</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Systems\Graphics\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Systems\Graphics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Body.cpp">
+      <Filter>Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Resolution.cpp">
+      <Filter>Systems\Physics\Dynamics</Filter>
+    </ClCompile>
+    <ClCompile Include="Physics.cpp">
+      <Filter>Systems\Physics\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision.cpp">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Constraint.cpp">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="ConstraintSolver.cpp">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsSystem.cpp">
+      <Filter>Systems\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Precompiled.cpp">
+      <Filter>Precompiled</Filter>
+    </ClCompile>
+    <ClCompile Include="ContactConstraint.cpp">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="StickConstraint.cpp">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseConstraint.cpp">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="Intersection.cpp">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Manifold.cpp">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Factory.h">
+      <Filter>BaseEngine\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDiagnostic.h">
+      <Filter>BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugDraw.h">
+      <Filter>BaseEngine\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>BaseEngine\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentTypeIds.h">
+      <Filter>BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>BaseEngine\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentCreator.h">
+      <Filter>BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="Composition.h">
+      <Filter>BaseEngine\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>BaseEngine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Containers.h">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix2.hpp">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLinkedList.h">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.hpp">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="VMath.h">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsIncludes.h">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="FilePath.h">
+      <Filter>BaseEngine\File</Filter>
+    </ClInclude>
+    <ClInclude Include="Serialization.h">
+      <Filter>BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="TextSerialization.h">
+      <Filter>BaseEngine\Serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Systems\Graphics\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXIncludes.h">
+      <Filter>Systems\Graphics\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexTypes.h">
+      <Filter>Systems\Graphics\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
+      <Filter>Systems\Graphics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Body.h">
+      <Filter>Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Resolution.h">
+      <Filter>Systems\Physics\Dynamics</Filter>
+    </ClInclude>
+    <ClInclude Include="Physics.h">
+      <Filter>Systems\Physics\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision.h">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Constraint.h">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstraintSolver.h">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsSystem.h">
+      <Filter>Systems\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Precompiled.h">
+      <Filter>Precompiled</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.hpp">
+      <Filter>BaseEngine\Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ContactConstraint.h">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="StickConstraint.h">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseConstraint.h">
+      <Filter>Systems\Physics\Constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="Intersection.h">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Manifold.h">
+      <Filter>Systems\Physics\Collision</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Shaders\Basic.fx">
+      <Filter>Systems\Graphics\Shaders</Filter>
+    </None>
+    <None Include="..\Shaders\Debug.fx">
+      <Filter>Systems\Graphics\Shaders</Filter>
+    </None>
+    <None Include="..\Objects\Ball.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Bomb.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Box.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Camera.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Ground.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Shrapnel.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\Wall.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\WallLeft.txt">
+      <Filter>Objects</Filter>
+    </None>
+    <None Include="..\Objects\WallRight.txt">
+      <Filter>Objects</Filter>
+    </None>
+  </ItemGroup>
+</Project>
