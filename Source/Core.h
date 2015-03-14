@@ -29,7 +29,10 @@ namespace Framework
 		void AddSystem(ISystem* system);
 		///Initializes all systems in the game.
 		void Initialize();
-	private:
+    /// Run a frame
+    void Frame();
+
+  private:
 		//Tracks all the systems the game uses
 		std::vector<ISystem*> Systems;
 		//The last time the game was updated

@@ -14,6 +14,7 @@
 #include "Graphics.h"
 #include "Physics.h"
 #include "GameLogic.h"
+#include <shlwapi.h>
 
 using namespace Framework;
 
@@ -42,6 +43,27 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR, INT)
 {
 	//ErrorIf( true , "True is always true ..." );
 
+  LPWSTR *szArgList;
+  int argCount;
+
+  szArgList = CommandLineToArgvW(GetCommandLineW(), &argCount);
+  if (szArgList == NULL)
+  {
+    MessageBoxW(NULL, L"Unable to parse command line", L"Error", MB_OK);
+    return 10;
+  }
+
+  bool testMode = false;
+
+  for(int i = 0; i < argCount; i++)
+  {
+    if( StrCmpW(szArgList[i], L"test") == 0)
+      testMode = true;
+  }
+
+
+
+
 	EnableMemoryLeakChecking();
 
 	//Create the core engine which manages all the systems that make up the game
@@ -64,8 +86,19 @@ INT WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, LPSTR, INT)
 	//Everything is set up, so activate the window
 	windows->ActivateWindow();
 
-	//Run the game
-	engine->GameLoop();
+  if(testMode)
+  {
+    for(int i=0;i<1000;++i)
+    {
+      engine->Frame();
+    }
+
+  }
+  else
+  {
+    //Run the game
+    engine->GameLoop();
+  }
 
 	//Delete all the game objects
 	FACTORY->DestroyAllObjects();

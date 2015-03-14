@@ -31,29 +31,35 @@ namespace Framework
 	{
 		for (unsigned i = 0; i < Systems.size(); ++i)
 			Systems[i]->Initialize();
+
+    //Initialize the last time variable so our first frame
+    //is "zero" seconds (and not some huge unknown number)
+    LastTime = timeGetTime();
 	}
+
+  void CoreEngine::Frame()
+  {
+    //Get the current time in milliseconds
+    unsigned currenttime = timeGetTime();
+    //Convert it to the time passed since the last frame (in seconds)
+    float dt = (currenttime - LastTime) / 1000.0f;
+    //Update the when the last update started
+    LastTime = currenttime;
+
+    //Update every system and tell each one how much
+    //time has passed since the last update
+    for (unsigned i = 0; i < Systems.size(); ++i)
+      Systems[i]->Update(dt);
+  }
 
 	void CoreEngine::GameLoop()
 	{
-		//Initialize the last time variable so our first frame
-		//is "zero" seconds (and not some huge unknown number)
-		LastTime = timeGetTime();
+	
 
 		while (GameActive)
 		{
-			//Get the current time in milliseconds
-			unsigned currenttime = timeGetTime();
-			//Convert it to the time passed since the last frame (in seconds)
-			float dt = (currenttime - LastTime) / 1000.0f;
-			//Update the when the last update started
-			LastTime = currenttime;
-
-			//Update every system and tell each one how much
-			//time has passed since the last update
-			for (unsigned i = 0; i < Systems.size(); ++i)
-				Systems[i]->Update(dt);
+      Frame();
 		}
-
 	}
 
 	void CoreEngine::BroadcastMessage(Message* message)
