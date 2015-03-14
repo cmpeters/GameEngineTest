@@ -1,1 +1,3 @@
-start GameEngine.exe test
+echo Starting
+echo %CD%
+GameEngine.exe test
