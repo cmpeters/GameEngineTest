@@ -1,1 +1,1 @@
-GameEngine.exe test
+start GameEngine.exe test
